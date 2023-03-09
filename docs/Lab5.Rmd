@@ -1,0 +1,78 @@
+---
+title: "Lab5"
+author: "Sarang Patel"
+date: "3/23/2022"
+output: github_document
+---
+
+```{r message=FALSE, warning=FALSE}
+
+# Load the required packages for the project
+
+library(devtools)
+library(tidyverse)
+library(dplyr)
+library(corrplot)
+```
+
+
+https://github.com/sarangpmr/bball/
+
+# Package Setup
+## Question 1
+
+The three functions have been created and added to an R package (following the processes in "Intro to R package….R").
+They can be found in the public repo [HERE](https://github.com/sarangpmr/bball/tree/main/R).
+There are three functions total:
+* Function 1: lebronPPG.R
+    + This function takes the PPG for Lebron James for a given NBA season (one of the seasons that he has played).
+* Function 2: oldestPlayer.R
+    + This function returns the oldest player for a given NBA season.
+* Function 3: corrNum.R
+    + This function returns the correlation matrix for all numeric variables in a given year.
+
+## Question 2
+
+The package has been created.
+
+## Question 3
+
+The package has been uploaded to Github (correctly, this time). It can be found [HERE](https://github.com/sarangpmr/bball/).
+
+# Package Usage
+## Question 4
+Let's now install the package in R. 
+```{r}
+install_github("sarangpmr/bball")
+library(bball)
+```
+
+## Question 5
+Let's now run each of the functions and make sure they are working correctly.
+
+Testing out that the .Rda file correctly imports a data frame:
+```{r}
+# test out the .Rda file works correctly and returns a data frame.
+data(nba)
+class(nba)
+head(nba, 10)
+```
+
+Testing out that the first function, lebronPPG():
+```{r}
+# test out the first function, lebronPPG()
+lebronPPG(2001) # this should return an error
+lebronPPG(2006)
+```
+
+Testing out the second function, oldestPlayer():
+```{r}
+oldestPlayer(1990)
+```
+
+Testing out the third function, corrNum():
+```{r}
+corrNum(2006)
+```
+
+
