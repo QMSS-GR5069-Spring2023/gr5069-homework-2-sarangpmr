@@ -57,9 +57,12 @@ head(nba, 10)
 
 Testing out that the first function, lebronPPG():
 ```{r}
-# test out the first function, lebronPPG()
-lebronPPG(2001) # this should return an error
-lebronPPG(2006)
+# The lebronPPG() function should return four values: player, year, g, pts, ppg
+# The function will not return anything if you provide a year value outside the range of his career
+
+lebronPPG(2001) # This should return an error message with the correct year range
+
+lebronPPG(2006) # This should return our values
 ```
 
 Testing out the second function, oldestPlayer():
