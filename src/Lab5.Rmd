@@ -64,7 +64,12 @@ lebronPPG(2006)
 
 Testing out the second function, oldestPlayer():
 ```{r}
-oldestPlayer(1990)
+# This function will return the highest-aged player from the supplied year
+# Note that like with the previous function, the year range must fall within the boundaries of the data, otherwise it will return nothing.
+
+oldestPlayer(1990) # This will return the oldest player in the 1990 season
+
+oldestPlayer(2018)
 ```
 
 Testing out the third function, corrNum():
