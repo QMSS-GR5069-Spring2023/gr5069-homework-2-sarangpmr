@@ -40,8 +40,15 @@ The package has been uploaded to Github (correctly, this time). It can be found 
 ## Question 4
 Let's now install the package in R. 
 ```{r}
-install_github("sarangpmr/bball")
-library(bball)
+# Our package is hosted on git, so we will need to use devtools to install it.
+# Included with the package are the three core functions described above,
+# as well as a data() module that reads in a data.frame of NBA players and
+# statistics going back to 1950. 
+
+devtools::install_github("sarangpmr/bball") # Install the package
+
+
+library(bball) # Load it into our environment
 ```
 
 ## Question 5
