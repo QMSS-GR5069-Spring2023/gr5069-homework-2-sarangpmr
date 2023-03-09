@@ -5,10 +5,8 @@ date: "3/23/2022"
 output: github_document
 ---
 
-```{r message=FALSE, warning=FALSE}
 
-# Load the required packages for the project
-
+```{r}
 library(devtools)
 library(tidyverse)
 library(dplyr)
