@@ -49,10 +49,14 @@ Let's now run each of the functions and make sure they are working correctly.
 
 Testing out that the .Rda file correctly imports a data frame:
 ```{r}
-# test out the .Rda file works correctly and returns a data frame.
-data(nba)
-class(nba)
-head(nba, 10)
+# Test out the .Rda file works correctly and returns a data frame.
+
+
+data(nba) # Load the data file
+
+class(nba) # Check that it's returned as a data.frame
+
+head(nba, 10) # View the first 10 rows of our data to see it's loaded correctly
 ```
 
 Testing out that the first function, lebronPPG():
