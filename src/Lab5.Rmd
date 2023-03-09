@@ -69,7 +69,14 @@ oldestPlayer(1990)
 
 Testing out the third function, corrNum():
 ```{r}
-corrNum(2006)
+# This function returns a correlation plot for the inputted year of all available
+# numeric values across all players. 
+# Providing a year value outside the data's range will return a blank plot and
+# an 'invalid symbol coordinates' error.
+
+corrNum(1888) # Returns a blank plot
+
+corrNum(2006) # Creates a correlation plot for all players in the year 2006
 ```
 
 
