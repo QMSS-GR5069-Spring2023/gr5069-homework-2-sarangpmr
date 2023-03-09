@@ -13,19 +13,23 @@ library(corrplot)
 ```
 
 
-https://github.com/sarangpmr/bball/
+[Lab Repository](https://github.com/sarangpmr/bball/)
 
 # Package Setup
 ## Question 1
 
-The three functions have been created and added to an R package (following the processes in "Intro to R package….R").
+The three functions have been created and added to an R package (following the processes in "package_tutorial.R").
 They can be found in the public repo [HERE](https://github.com/sarangpmr/bball/tree/main/R).
 There are three functions total:
-* Function 1: lebronPPG.R
+
+* Function 1: `lebronPPG.R(year)`
+    + Args: `year`, a value of type int
     + This function takes the PPG for Lebron James for a given NBA season (one of the seasons that he has played).
-* Function 2: oldestPlayer.R
+* Function 2: `oldestPlayer(year)`
+    + Args: `year`, a value of type int
     + This function returns the oldest player for a given NBA season.
-* Function 3: corrNum.R
+* Function 3: `corrNum(year)`
+    + Args: `year`, a value of type int
     + This function returns the correlation matrix for all numeric variables in a given year.
 
 ## Question 2
